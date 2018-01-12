@@ -14,6 +14,7 @@ namespace Vko2Tehtavat
             int tehtava, number = 0, number1 = 0, number2 = 0, number3 = 0, hour = 0, minute = 0;
             float luku1 = 0, luku2 = 0, luku3 = 0, average = 0;
             double gas = 0, price = 0;
+            char t = '*';
             Console.Write("Give number of the homework you want to check \n");
             tehtava = int.Parse(Console.ReadLine());
             switch (tehtava)
@@ -287,6 +288,97 @@ namespace Vko2Tehtavat
                     }
 
                         break;
+
+                case 11:
+
+                    //Tehtava11
+
+                    Console.WriteLine("How many row would you like? ");
+                    number = int.Parse(Console.ReadLine());
+
+                    for(int i = 0; i < number; i++)
+                    {
+                        for(int j = 0; j < i; j++)
+                        {
+                            Console.Write(t);
+                        }
+                        Console.WriteLine("");
+                    }
+
+                    break;
+
+                case 12:
+
+                    //Tehtava12
+
+
+
+                    break;
+
+                case 13:
+
+                    //Tehtava13
+
+
+
+                    break;
+
+                case 14:
+
+                    //Tehtava14
+
+
+
+                    break;
+
+                case 15:
+
+                    //Tehtava15
+
+
+
+                    break;
+
+                case 16:
+
+                    //Tehtava16
+
+
+
+                    break;
+
+                case 17:
+
+                    //Tehtava17
+
+
+
+                    break;
+
+                case 18:
+
+                    //Tehtava18
+
+
+
+                    break;
+
+                case 19:
+
+                    //Tehtava19
+
+
+
+                    break;
+
+                case 20:
+
+                    //Tehtava20
+
+
+
+                    break;
+
                 default:
                     Console.WriteLine("Given number doesn't compare to any of the homework");
                     break;
