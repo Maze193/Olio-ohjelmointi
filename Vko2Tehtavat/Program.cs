@@ -11,7 +11,7 @@ namespace Vko2Tehtavat
         static void Main(string[] args)
         {
             int[] arr = new int[] { 1, 2, 33, 44, 55, 68, 77, 96, 100 };
-            int tehtava, number = 0, number1 = 0, number2 = 0, number3 = 0, hour = 0, minute = 0;
+            int tehtava, number = 0, number0 = 0, number1 = 0, number2 = 0, number3 = 0, number4 = 0, number5 = 0, hour = 0, minute = 0;
             float luku1 = 0, luku2 = 0, luku3 = 0, average = 0;
             double gas = 0, price = 0;
             char t = '*';
@@ -311,7 +311,17 @@ namespace Vko2Tehtavat
 
                     //Tehtava12
 
+                    Console.WriteLine("Give five numbers ");
+                    number = int.Parse(Console.ReadLine());
+                    number1 = int.Parse(Console.ReadLine());
+                    number2 = int.Parse(Console.ReadLine());
+                    number3 = int.Parse(Console.ReadLine());
+                    number4 = int.Parse(Console.ReadLine());
 
+                    int[] arr2 = new int[] { number, number1, number2, number3, number4 };
+
+                    Array.Sort(arr2, StringComparer.InvariantCulture);
+                    Array.ForEach(arr2, x => Console.WriteLine(x));
 
                     break;
 
@@ -319,7 +329,23 @@ namespace Vko2Tehtavat
 
                     //Tehtava13
 
+                    Console.WriteLine("Give points five times ");
+                    number = int.Parse(Console.ReadLine());
+                    number1 = int.Parse(Console.ReadLine());
+                    number2 = int.Parse(Console.ReadLine());
+                    number3 = int.Parse(Console.ReadLine());
+                    number4 = int.Parse(Console.ReadLine());
 
+                    int[] arr3 = new int[] { number, number1, number2, number3, number4 };
+
+                    Array.Sort(arr3, StringComparer.InvariantCulture);
+
+                    for(int i = 1; i < 4; i++)
+                    {
+                        number5 += arr3[i];
+                    }
+
+                    Console.WriteLine("Points are " + number5);
 
                     break;
 
@@ -327,7 +353,16 @@ namespace Vko2Tehtavat
 
                     //Tehtava14
 
+                    Console.WriteLine("To stop giving grades give a number less than 0 or more than 5");
 
+                    do
+                    {
+                        Console.WriteLine("Please give a grade ");
+                        number = int.Parse(Console.ReadLine());
+
+
+
+                    } while (number > 0 || number < 5);
 
                     break;
 
