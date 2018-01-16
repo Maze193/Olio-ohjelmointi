@@ -11,6 +11,7 @@ namespace Vko2Tehtavat
         static void Main(string[] args)
         {
             int[] arr = new int[] { 1, 2, 33, 44, 55, 68, 77, 96, 100 };
+            string[] ar0, ar1, ar2, ar3, ar4, ar5;
             int tehtava, number = 0, number0 = 0, number1 = 0, number2 = 0, number3 = 0, number4 = 0, number5 = 0, hour = 0, minute = 0;
             float luku1 = 0, luku2 = 0, luku3 = 0, average = 0;
             double gas = 0, price = 0;
@@ -353,16 +354,87 @@ namespace Vko2Tehtavat
 
                     //Tehtava14
 
-                    Console.WriteLine("To stop giving grades give a number less than 0 or more than 5");
+                    Console.WriteLine("To stop giving grades give a number more than 5");
 
                     do
                     {
                         Console.WriteLine("Please give a grade ");
                         number = int.Parse(Console.ReadLine());
 
+                        if (number == 0)
+                        {
+                            number0++;
+                        }
+
+                        if (number == 1)
+                        {
+                            number1++;
+                        }
+
+                        if (number == 2)
+                        {
+                            number2++;
+                        }
+
+                        if (number == 3)
+                        {
+                            number3++;
+                        }
+
+                        if (number == 4)
+                        {
+                            number4++;
+                        }
+
+                        if (number == 5)
+                        {
+                            number5++;
+                        }
+
+                    } while (number < 6);
 
 
-                    } while (number > 0 || number < 5);
+                    Console.Write("0: ");
+                    for (int i = 0; i < number0; i++)
+                    {
+                        Console.Write(t);
+                    }
+                    Console.WriteLine("");
+
+                    Console.Write("1: ");
+                    for (int i = 0; i < number1; i++)
+                    {
+                        Console.Write(t);
+                    }
+                    Console.WriteLine("");
+
+                    Console.Write("2: ");
+                    for (int i = 0; i < number2; i++)
+                    {
+                        Console.Write(t);
+                    }
+                    Console.WriteLine("");
+
+                    Console.Write("3: ");
+                    for (int i = 0; i < number3; i++)
+                    {
+                        Console.Write(t);
+                    }
+                    Console.WriteLine("");
+
+                    Console.Write("4: ");
+                    for (int i = 0; i < number4; i++)
+                    {
+                        Console.Write(t);
+                    }
+                    Console.WriteLine("");
+
+                    Console.Write("5: ");
+                    for (int i = 0; i < number5; i++)
+                    {
+                        Console.Write(t);
+                    }
+                    Console.WriteLine("");
 
                     break;
 
