@@ -11,11 +11,12 @@ namespace Vko2Tehtavat
         static void Main(string[] args)
         {
             int[] arr = new int[] { 1, 2, 33, 44, 55, 68, 77, 96, 100 };
-            string[] ar0, ar1, ar2, ar3, ar4, ar5;
             int tehtava, number = 0, number0 = 0, number1 = 0, number2 = 0, number3 = 0, number4 = 0, number5 = 0, hour = 0, minute = 0;
             float luku1 = 0, luku2 = 0, luku3 = 0, average = 0;
             double gas = 0, price = 0;
             char t = '*';
+            Random random = new Random();
+            int rnd = random.Next(0, 100);
             Console.Write("Give number of the homework you want to check \n");
             tehtava = int.Parse(Console.ReadLine());
             switch (tehtava)
@@ -24,7 +25,6 @@ namespace Vko2Tehtavat
 
                     //Tehtava1
                     
-
                     Console.Write("Give a number between 1 and 3 \n");
                     number = int.Parse(Console.ReadLine());
 
@@ -48,6 +48,7 @@ namespace Vko2Tehtavat
                 case 2:
 
                     //Tehtava2
+
                     int points;
 
                     Console.Write("Give students points ");
@@ -442,7 +443,37 @@ namespace Vko2Tehtavat
 
                     //Tehtava15
 
+                    Console.WriteLine("Give size of the tree");
+                    number = int.Parse(Console.ReadLine());
+                    number0 = number - 2;
 
+                    for (int i = 0; i < number0; i++)
+                    {
+                        number1 = number0 - i - 1;
+                        for (int j = 0; j < number1; j++)
+                        {
+                            Console.Write(" ");
+                        }
+
+                        number2 = 2 * i + 1;
+                        for (int k = 0; k < number2; k++)
+                        {
+                            Console.Write(t);
+                        }
+
+                        Console.WriteLine("");
+                    }
+
+                    for(int i = 0; i < 2; i++)
+                    {
+                        
+                        for (int j = 1; j < number0; j++)
+                        {
+                            Console.Write(" ");
+                        }
+
+                        Console.WriteLine(t);
+                    }
 
                     break;
 
@@ -450,6 +481,28 @@ namespace Vko2Tehtavat
 
                     //Tehtava16
 
+                    do
+                    {
+                        Console.Write("Guess the number: ");
+                        number = int.Parse(Console.ReadLine());
+                        number0++;
+                        if (number < rnd)
+                        {
+                            Console.WriteLine("The number is bigger ");
+                        }
+
+                        else if (number > rnd)
+                        {
+                            Console.WriteLine("The number is smaller");
+                        }
+
+                        else if (number == rnd)
+                        {
+                            Console.Write("You guessed correct, it took " + number0 + " guesses!");
+                            break;
+                        }
+
+                    } while (number != rnd);
 
 
                     break;
