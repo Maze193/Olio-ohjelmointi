@@ -10,12 +10,15 @@ namespace Vko2Tehtavat
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 1, 2, 33, 44, 55, 68, 77, 96, 100 };
-            int tehtava, number = 0, number0 = 0, number1 = 0, number2 = 0, number3 = 0, number4 = 0, number5 = 0, hour = 0, minute = 0;
+            int[] arr = new int[] { 1, 2, 33, 44, 55, 68, 77, 96, 100 }, arr1 = new int[] { 3, 4, 34, 45, 56, 67, 78, 99, 101 };
+            int tehtava, number = 0, number0 = 0, number1 = 0, number2 = 0, number3 = 0, number4 = 0, number5 = 0,
+                hour = 0, minute = 0, lettersRevealed = 0, lives = 5;
             float luku1 = 0, luku2 = 0, luku3 = 0, average = 0;
             double gas = 0, price = 0;
-            char t = '*';
-            Random random = new Random();
+            char guess, t = '*';
+            string pal, input;
+            bool won = false;
+            Random random = new Random((int)DateTime.Now.Ticks);
             int rnd = random.Next(0, 100);
             Console.Write("Give number of the homework you want to check \n");
             tehtava = int.Parse(Console.ReadLine());
@@ -511,7 +514,29 @@ namespace Vko2Tehtavat
 
                     //Tehtava17
 
+                    int[] carr = new int[] { arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7], arr[8],
+                        arr1[0], arr1[1], arr1[2], arr1[3], arr1[4], arr1[5], arr1[6], arr1[7], arr1[8]};
+                    Array.Sort(carr, StringComparer.InvariantCulture);
+                    Console.Write("Array number 1 is: ");
+                    for(int i = 0; i < 9; i++)
+                    {
+                        Console.Write(arr[i] + " ");
+                    }
+                    Console.WriteLine("");
 
+                    Console.Write("Array number 2 is: ");
+                    for (int i = 0; i < 9; i++)
+                    {
+                        Console.Write(arr1[i] + " ");
+                    }
+                    Console.WriteLine("");
+
+                    Console.Write("Array number 1 is: ");
+                    for (int i = 0; i < 18; i++)
+                    {
+                        Console.Write(carr[i] + " ");
+                    }
+                    Console.WriteLine("");
 
                     break;
 
@@ -519,7 +544,21 @@ namespace Vko2Tehtavat
 
                     //Tehtava18
 
+                    Console.WriteLine("Please write something to check if it is a palidrome");
 
+                    pal = Console.ReadLine();
+
+                    string pal1 = new string(pal.Reverse().ToArray());
+
+                    if(pal == pal1)
+                    {
+                        Console.WriteLine("Your writing is a palidrome");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Your writing is not a palidrome");
+                    }
 
                     break;
 
@@ -527,15 +566,124 @@ namespace Vko2Tehtavat
 
                     //Tehtava19
 
+                    string wordToGuess = "Ohjelmointi";
+                    string wordToGuessUppercase = wordToGuess.ToUpper();
 
+                    StringBuilder displayToPlayer = new StringBuilder(wordToGuess.Length);
+                    for (int i = 0; i < wordToGuess.Length; i++)
+                        displayToPlayer.Append('_');
+
+                    List<char> correctGuesses = new List<char>();
+                    List<char> incorrectGuesses = new List<char>();
+
+                    while (!won && lives > 0)
+                    {
+                        Console.Write("Guess a letter: ");
+
+                        input = Console.ReadLine().ToUpper();
+                        guess = input[0];
+
+                        if (correctGuesses.Contains(guess))
+                        {
+                            Console.WriteLine("You've already tried '{0}', and it was correct!", guess);
+                            continue;
+                        }
+                        else if (incorrectGuesses.Contains(guess))
+                        {
+                            Console.WriteLine("You've already tried '{0}', and it was wrong!", guess);
+                            continue;
+                        }
+
+                        if (wordToGuessUppercase.Contains(guess))
+                        {
+                            correctGuesses.Add(guess);
+
+                            for (int i = 0; i < wordToGuess.Length; i++)
+                            {
+                                if (wordToGuessUppercase[i] == guess)
+                                {
+                                    displayToPlayer[i] = wordToGuess[i];
+                                    lettersRevealed++;
+                                }
+                            }
+
+                            if (lettersRevealed == wordToGuess.Length)
+                                won = true;
+                        }
+                        else
+                        {
+                            incorrectGuesses.Add(guess);
+
+                            Console.WriteLine("Nope, there's no '{0}' in it!", guess);
+                            lives--;
+                        }
+
+                        Console.WriteLine(displayToPlayer.ToString());
+                    }
+
+                    if (won)
+                        Console.WriteLine("You won!");
+                    else
+                        Console.WriteLine("You lost! It was '{0}'", wordToGuess);
 
                     break;
 
                 case 20:
 
                     //Tehtava20
+                    //Shadowrun 5e dice roller
 
+                    Console.WriteLine("Give the number of dice to roll");
+                    number = int.Parse(Console.ReadLine());
 
+                    Console.WriteLine("Do you want to use 'Push the limits' (y/n)");
+                    string yn = Console.ReadLine();
+
+                    if (yn == "y")
+                    {
+                        Console.WriteLine("Please give the edge value");
+                        number3 = int.Parse(Console.ReadLine());
+
+                        number += number3;
+                    }
+
+                    for (int i = 0; i < number; i++)
+                    {
+                        number0 = random.Next(1, 7);
+
+                        if (number0 > 4)
+                        {
+                            number1++;
+                        }
+
+                        if (number0 == 6)
+                        {
+                            number2++;
+                        }
+
+                        Console.WriteLine(number0);
+                    }
+
+                    Console.WriteLine("You got " + number1 + " hits");
+
+                    if (yn == "y")
+                    {
+                        for (int i = 0; i < number2; i++)
+                        {
+                            number0 = random.Next(1, 7);
+
+                            if (number0 > 4)
+                            {
+                                number4++;
+                            }
+
+                            Console.WriteLine(number0);
+                        }
+
+                        number5 = number4 + number1;
+
+                        Console.WriteLine("And you got " + number4 + " hits with rule of six, wich totals to " + number5 + " hits!");
+                    }
 
                     break;
 
