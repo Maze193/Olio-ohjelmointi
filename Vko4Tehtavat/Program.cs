@@ -10,6 +10,14 @@ namespace Vko4Tehtavat
     {
         static void Main(string[] args)
         {
+            Tank TestTank = new Tank();
+
+            TestTank.Name = Console.ReadLine();
+            TestTank.Type = Console.ReadLine();
+            TestTank.CrewCount = int.Parse(Console.ReadLine());
+            //crewc = TestTank.CrewCount;
+            TestTank.AccelerateTo();
+
         }
     }
 }
