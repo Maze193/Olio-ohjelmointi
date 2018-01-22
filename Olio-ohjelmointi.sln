@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko2Tehtavat", "Vko2Tehtavat", "{2F448CF2-3E42-419A-A4DE-D0575E5CD144}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko2Tehtavat", "Vko2Tehtavat\Vko2Tehtavat.csproj", "{9D33CF82-4AD3-4493-9754-2DB5D331F938}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko4Tehtavat", "Vko4Tehtavat", "{B4302AA4-02BC-4F9B-AAFF-0CF5B82AC689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko4Tehtavat", "Vko4Tehtavat\Vko4Tehtavat.csproj", "{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{9D33CF82-4AD3-4493-9754-2DB5D331F938}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D33CF82-4AD3-4493-9754-2DB5D331F938}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D33CF82-4AD3-4493-9754-2DB5D331F938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9D33CF82-4AD3-4493-9754-2DB5D331F938} = {2F448CF2-3E42-419A-A4DE-D0575E5CD144}
+		{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C} = {B4302AA4-02BC-4F9B-AAFF-0CF5B82AC689}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEE216BC-6E62-4DB1-A471-E44A148A28A9}
