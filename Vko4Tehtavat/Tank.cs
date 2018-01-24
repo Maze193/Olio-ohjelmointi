@@ -22,7 +22,7 @@ namespace Vko4Tehtavat
 
             set
             {
-
+                name = value;
             }
         }
         public string Type
@@ -33,7 +33,7 @@ namespace Vko4Tehtavat
             }
             set
             {
-
+                type = value;
             }
         }
 
@@ -56,17 +56,18 @@ namespace Vko4Tehtavat
             set
             {
 
+                crewc = value;
 
-
-                if(value > 6)
+                if(crewc > 6)
                 {
-                    Console.WriteLine("There can't be more than six crew members");
+                    Console.WriteLine("There can't be more than six crew members. Dropping some people off...");
+                    crewc = 6;
                 }
 
-                if (value < 2)
+                if (crewc < 2)
                 {
-                    Console.WriteLine("There needs to be at least two crew members");
-                    
+                    Console.WriteLine("There needs to be at least two crew members. Recruiting more members...");
+                    crewc = 2;
                 }
             }
         }
@@ -111,7 +112,7 @@ namespace Vko4Tehtavat
 
             if (speed < 0)
             {
-                Console.WriteLine("Too small speed setting it to zero...");
+                Console.WriteLine("Speed too small setting it to zero...");
                 speed = 0;
             }
 
