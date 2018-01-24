@@ -9,7 +9,7 @@ namespace Vko4Tehtavat
     class Tank
     {
         public string name, type;
-        float speed, speedm = 100;
+        float speedm = 100, speed;
         public int crewc;
 
 
@@ -55,14 +55,15 @@ namespace Vko4Tehtavat
 
             set
             {
-                CrewCount = crewc;
 
-                if(CrewCount > 6)
+
+
+                if(value > 6)
                 {
                     Console.WriteLine("There can't be more than six crew members");
                 }
 
-                if (CrewCount < 2)
+                if (value < 2)
                 {
                     Console.WriteLine("There needs to be at least two crew members");
                     
@@ -74,43 +75,47 @@ namespace Vko4Tehtavat
         {
             get
             {
-                Speed = 0;
+                speed = 0;
                 return speed;
             }
 
             set
             {
-                
+                speed = value;
             }
+
         }
 
-        public float AccelerateTo()
+        public float AccelerateTo(float spee)
         {
-            Console.WriteLine("Give the speed");
+            for (int i = 0; i < spee; i++)
+            {
+                speed++;
+            }
 
-            Speed = float.Parse(Console.ReadLine());
-
-            if (Speed > SpeedMax)
+            if (speed > SpeedMax)
             {
                 Console.WriteLine("Too much speed. Slowing down to maximum speed...");
-                Speed = SpeedMax;
+                speed = SpeedMax;
             }
 
-            return Speed;
+            return speed;
         }
 
-        public float SlowTo()
+        public float SlowTo(float slow)
         {
-            Console.WriteLine("Give the speed");
-
-            Speed = float.Parse(Console.ReadLine());
-
-            if (Speed < 0)
+            for (int i = 0; i < slow; i++)
             {
-                Speed = 0;
+                speed--;
             }
 
-            return Speed;
+            if (speed < 0)
+            {
+                Console.WriteLine("Too small speed setting it to zero...");
+                speed = 0;
+            }
+
+            return speed;
         }
 
     }

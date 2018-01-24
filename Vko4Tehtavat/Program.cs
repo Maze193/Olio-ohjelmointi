@@ -10,13 +10,25 @@ namespace Vko4Tehtavat
     {
         static void Main(string[] args)
         {
+            
             Tank TestTank = new Tank();
 
-            TestTank.Name = Console.ReadLine();
-            TestTank.Type = Console.ReadLine();
-            TestTank.CrewCount = int.Parse(Console.ReadLine());
-            //crewc = TestTank.CrewCount;
-            TestTank.AccelerateTo();
+            TestTank.Name = "Testi";
+            TestTank.Type = "ASD123";
+            TestTank.CrewCount = 5;
+
+            Console.WriteLine("How much would you like to accelerate?");
+            int spee = int.Parse(Console.ReadLine());
+            TestTank.AccelerateTo(spee);
+
+            Console.WriteLine("How much would you like to decelerate?");
+            int slow = int.Parse(Console.ReadLine());
+            TestTank.SlowTo(slow);
+
+            Console.WriteLine("The tanks name is: " + TestTank.Name);
+            Console.WriteLine("The type is: " + TestTank.Type);
+            Console.WriteLine("The crew count is; " + TestTank.CrewCount);
+            Console.WriteLine("The speed is: " );
 
         }
     }
