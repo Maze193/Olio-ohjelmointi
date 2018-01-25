@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko2Tehtavat", "Vko2Tehtavat", "{2F448CF2-3E42-419A-A4DE-D0575E5CD144}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko4Tehtavat2", "Vko4Tehtavat2\Vko4Tehtavat2.csproj", "{DF2B27A6-3590-4CDC-A6B3-E27182E8BE64}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vko4Tehtavat3", "Vko4Tehtavat3\Vko4Tehtavat3.csproj", "{2CE8CBF8-4358-4DE5-B013-D4E700F00FBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko5Tehtavat", "Vko5Tehtavat", "{97EC9315-1AF8-484D-A3F1-D2F1ADC9954A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tehtava1", "Tehtava1\Tehtava1.csproj", "{8C1B0852-E59E-4A0C-A776-32519BE3A918}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{2CE8CBF8-4358-4DE5-B013-D4E700F00FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CE8CBF8-4358-4DE5-B013-D4E700F00FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CE8CBF8-4358-4DE5-B013-D4E700F00FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C1B0852-E59E-4A0C-A776-32519BE3A918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C1B0852-E59E-4A0C-A776-32519BE3A918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C1B0852-E59E-4A0C-A776-32519BE3A918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C1B0852-E59E-4A0C-A776-32519BE3A918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{A8582331-F4FA-4FB4-99A5-6A3325B0BF2C} = {B4302AA4-02BC-4F9B-AAFF-0CF5B82AC689}
 		{DF2B27A6-3590-4CDC-A6B3-E27182E8BE64} = {B4302AA4-02BC-4F9B-AAFF-0CF5B82AC689}
 		{2CE8CBF8-4358-4DE5-B013-D4E700F00FBA} = {B4302AA4-02BC-4F9B-AAFF-0CF5B82AC689}
+		{8C1B0852-E59E-4A0C-A776-32519BE3A918} = {97EC9315-1AF8-484D-A3F1-D2F1ADC9954A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEE216BC-6E62-4DB1-A471-E44A148A28A9}
