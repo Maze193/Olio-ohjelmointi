@@ -10,7 +10,7 @@ namespace Tehtava2
     {
         static void Main(string[] args)
         {
-            Paivamaara paivamaara = new Paivamaara();
+            //Paivamaara paivamaara = new Paivamaara();
             bool po = false;
             while (po != true)
             {
@@ -29,7 +29,8 @@ namespace Tehtava2
 
                     string syo3 = vuosi + "";
 
-                    paivamaara.OnkoPvm(syote: syo, syote2: syo2, syote3: syo3);
+                    //paivamaara.OnkoPvm(syote: syo, syote2: syo2, syote3: syo3);
+                Console.WriteLine(Paivamaara.OnkoPvm(syote: syo, syote2: syo2, syote3: syo3));
 
                     po = true;
                 //}

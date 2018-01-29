@@ -10,15 +10,24 @@ namespace Tehtava1
     {
         static void Main(string[] args)
         {
-            ItMath math = new ItMath();
+            //ItMath math = new ItMath();
             //bool t = true;
             
 
             Console.WriteLine("Give a string to see if it is a number");
             string syo = Console.ReadLine();
 
-            math.OnkoLuku(syote:syo);
+            if (ItMath.OnkoLuku(syote:syo) == true)
+            {
+                Console.WriteLine("It is a number!");
+            }
 
+            else
+            {
+                Console.WriteLine("It is not a number... ");
+            }
+
+            Console.ReadLine();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Tehtava2
 {
     class Paivamaara
     {
-        public bool OnkoPvm(string syote, string syote2, string syote3)
+        public static bool OnkoPvm(string syote, string syote2, string syote3)
         {
             
             int luku = 0;
