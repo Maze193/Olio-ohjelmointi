@@ -76,7 +76,7 @@ namespace Vko4Tehtavat
         {
             get
             {
-                speed = 0;
+                //speed = 0;
                 return speed;
             }
 

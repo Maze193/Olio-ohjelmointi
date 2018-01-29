@@ -8,12 +8,25 @@ namespace Tehtava1
 {
     class ItMath
     {
-        
+        //public string syote = "testi";
+        /*public string Lukuko
+        {
+            get
+            {
+                return syote;
+            }
+
+            set
+            {
+                syote = value;
+            }
+        }*/
+
         public static bool OnkoLuku(string syote)
         {
-            bool ol;
-            int luku = 0;
-            ol = int.TryParse(syote, out luku);
+            // = Console.ReadLine();
+            double luku = 0;
+            bool ol = double.TryParse(syote, out luku);
             return ol;
         }
     }
