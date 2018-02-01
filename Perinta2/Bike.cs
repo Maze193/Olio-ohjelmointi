@@ -8,19 +8,34 @@ namespace Perinta2
 {
     class Bike : Vehicle
     {
-        
-        public bool GearWheels { get; set; }
-        public string GearName(string gearName)
+        bool gearwheels;
+
+        public bool GearWheels {
+            get
+            { 
+                return gearwheels;
+            }
+            set
+            {
+                gearwheels = value;
+            }
+        }
+        public string GearName { get; set; }
+
+        public Bike()
         {
-           
-           if (GearWheels == false)
-           {
-                return "";
-           }
-           else
-           {
-               return gearName;
-           }
+
+        }
+
+        public Bike(string name, string model, string color, string gearname, int myear)
+        {
+            GearName = gearname;
+            
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + " " + "GearWheels: " + GearWheels + " " + "GearName: " + GearName;
         }
 
     }

@@ -17,7 +17,7 @@ namespace Perinta2
         {
         }
 
-        // constructor takes employee firstname and lastname as a parameter
+        // constructor takes vehicles data as a parameters
         public Vehicle(string name, string model, string color, int myear)
         {
             Name = name;
@@ -26,10 +26,10 @@ namespace Perinta2
             ModelYear = myear;
         }
 
-        // return Employee data as a one string, override Object class ToString()-method
+        // return vehicle data as a one string, override Object class ToString()-method
         public override string ToString()
         {
-            return Name + " " + Model + " " + ModelYear + " " + Color;
+            return "Name: " + Name + " " + "Model: " + Model + " " + "ModelYear: " + ModelYear + " " + "Color: " + Color;
         }
     }
 }

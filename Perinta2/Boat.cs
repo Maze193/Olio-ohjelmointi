@@ -24,7 +24,7 @@ namespace Perinta2
 
         public override string ToString()
         {
-            return base.ToString() + " " + SeatCount + " " + BoatType;
+            return base.ToString() + " " + "SeatCount: " + SeatCount + " " + "BoatType: " + BoatType;
         }
     }
 }
