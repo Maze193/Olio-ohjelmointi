@@ -4,26 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Abstrakti1
+namespace Abstrakti2
 {
-    class Vehicle : Tyre
+    class Thing
     {
-        
         public string Name { get; set; }
 
-        public string Model { get; set; }
-
-        public Vehicle()
+        public Thing()
         {
 
         }
 
-        public Vehicle(string name, string model)
+        public Thing(string name)
         {
             Name = name;
-            Model = model;
-        }
 
+        }
 
     }
 }
