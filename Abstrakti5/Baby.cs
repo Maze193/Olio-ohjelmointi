@@ -17,7 +17,7 @@ namespace Abstrakti5
 
         public override string ToString()
         {
-            return FirstName + " " + LastName + " " + Diaper + " " + Height + "cm" + " " + Weight + "kg";
+            return FirstName + " " + LastName + " " + "diaper:" + Diaper + " " + Height + "cm" + " " + Weight + "kg";
         }
     }
 }
