@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko2Tehtavat", "Vko2Tehtavat", "{2F448CF2-3E42-419A-A4DE-D0575E5CD144}"
 EndProject
@@ -42,6 +42,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstrakti5", "Abstrakti5\Abstrakti5.csproj", "{ED0B15C2-BD78-4249-98E4-F609F374D540}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstrakti6", "Abstrakti6\Abstrakti6.csproj", "{3E5CDA23-4444-4577-BE59-D637DB7B5410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koostaminen1", "Koostaminen1\Koostaminen1.csproj", "{2029E2C1-05BF-4234-A192-C70D1DA11F40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koostaminen2", "Koostaminen2\Koostaminen2.csproj", "{3971441D-D37B-4553-90FB-9B8C8177F33E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +117,14 @@ Global
 		{3E5CDA23-4444-4577-BE59-D637DB7B5410}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E5CDA23-4444-4577-BE59-D637DB7B5410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E5CDA23-4444-4577-BE59-D637DB7B5410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2029E2C1-05BF-4234-A192-C70D1DA11F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2029E2C1-05BF-4234-A192-C70D1DA11F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2029E2C1-05BF-4234-A192-C70D1DA11F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2029E2C1-05BF-4234-A192-C70D1DA11F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,6 +146,8 @@ Global
 		{4FE61030-F3AF-4949-B26F-90D485A9F35C} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
 		{ED0B15C2-BD78-4249-98E4-F609F374D540} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
 		{3E5CDA23-4444-4577-BE59-D637DB7B5410} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
+		{2029E2C1-05BF-4234-A192-C70D1DA11F40} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
+		{3971441D-D37B-4553-90FB-9B8C8177F33E} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEE216BC-6E62-4DB1-A471-E44A148A28A9}

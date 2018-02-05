@@ -10,7 +10,7 @@ namespace Abstrakti3
     {
         static void Main(string[] args)
         {
-            /*Club club = new Club();
+            Club club = new Club();
 
             club.Ilves.Add(new Player("Riku", "Helenius", "mv", "vasen"));
             club.Ilves.Add(new Player("Waltteri", "Urpolahti", "mv", "vasen"));
@@ -37,13 +37,13 @@ namespace Abstrakti3
             club.Ilves.Add(new Player("Teemu", "Lepaus", "h", "vasen"));
             club.Ilves.Add(new Player("Juhani", "Tamminen", "h", "vasen"));
 
-            using (System.IO.StreamWriter ilves = new System.IO.StreamWriter("Ilves.txt", true))
+            /*using (System.IO.StreamWriter ilves = new System.IO.StreamWriter("Ilves.txt", true))
             {
                 foreach (Player player in club.Ilves)
                 {
                     ilves.WriteLine(player.ToString());
                 }
-            }
+            }*/
 
             club.Tappara.Add(new Player("Christian", "Heljanko", "mv", "vasen"));
             club.Tappara.Add(new Player("Dominik", "Hrachovina", "mv", "vasen"));
@@ -68,7 +68,7 @@ namespace Abstrakti3
             club.Tappara.Add(new Player("Jukka", "Peltola", "h", "vasen"));
             club.Tappara.Add(new Player("Sebastian", "Repo", "h", "vasen"));
 
-            using (System.IO.StreamWriter tappara = new System.IO.StreamWriter("Tappara.txt", true))
+            /*using (System.IO.StreamWriter tappara = new System.IO.StreamWriter("Tappara.txt", true))
             {
                 foreach (Player player in club.Tappara)
                 {
