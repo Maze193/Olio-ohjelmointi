@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koostaminen1", "Koostaminen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Koostaminen2", "Koostaminen2\Koostaminen2.csproj", "{3971441D-D37B-4553-90FB-9B8C8177F33E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko7Tehtävät", "Vko7Tehtävät", "{A236B04D-2375-4B00-B970-A6B16D3927B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeptions1", "Exeptions1\Exeptions1.csproj", "{9403E3E3-E4B1-4FB8-A401-7159BF6A2421}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +129,10 @@ Global
 		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3971441D-D37B-4553-90FB-9B8C8177F33E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9403E3E3-E4B1-4FB8-A401-7159BF6A2421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9403E3E3-E4B1-4FB8-A401-7159BF6A2421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9403E3E3-E4B1-4FB8-A401-7159BF6A2421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9403E3E3-E4B1-4FB8-A401-7159BF6A2421}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +156,7 @@ Global
 		{3E5CDA23-4444-4577-BE59-D637DB7B5410} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
 		{2029E2C1-05BF-4234-A192-C70D1DA11F40} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
 		{3971441D-D37B-4553-90FB-9B8C8177F33E} = {E0FA56ED-4A22-44B0-A29D-2F7BB1FDF3E4}
+		{9403E3E3-E4B1-4FB8-A401-7159BF6A2421} = {A236B04D-2375-4B00-B970-A6B16D3927B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEE216BC-6E62-4DB1-A471-E44A148A28A9}
