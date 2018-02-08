@@ -6,10 +6,23 @@ using System.Threading.Tasks;
 
 namespace Koostaminen1
 {
-    class Order 
+    class Order : OrderItem
     {
         public int ID { get; set; }
-        List<OrderItem> ordersItems = new List<OrderItem>();
+        public List<OrderItem> ordersItems = new List<OrderItem>();
+
+        public OrderItem item;
+
+        public Order()
+        {
+
+        }
+
+        public Order(int id, OrderItem ite)
+        {
+            item = ite;
+            ID = id;
+        }
 
     }
 }

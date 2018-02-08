@@ -9,5 +9,15 @@ namespace Koostaminen1
     class OrderItem
     {
         public string OrderName { get; set; }
+
+        public int Count { get; set; }
+
+        public OrderItem()
+        { }
+        public OrderItem(string orname)
+        {
+            OrderName = orname;
+        }
+
     }
 }
