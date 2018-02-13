@@ -10,13 +10,13 @@ namespace Exeptions2
     class Names
     {
         List<string> namelist = new List<string>();
-        int amount, amount2;
+        int amount;
         public void NamesList()
         {
-            string text = @"D:\L4072\nimet.txt";
+            string text = @"nimet.txt";
             if(File.Exists(text) == true)
             {
-                var texti = File.ReadAllLines(@"D:\L4072\nimet.txt");
+                var texti = File.ReadAllLines(@"nimet.txt");
                 foreach (string name in texti)
                 {
                     namelist.Add(name);
@@ -24,12 +24,15 @@ namespace Exeptions2
                     amount++;
                 }
 
-                var duplicates = namelist
-                    .GroupBy(i => i)
-                    .Where(g => g.Count() > 0)
-                    .Select(g => g.Key);
-                foreach (var d in duplicates)
-                    Console.WriteLine(d + d.Count()); // 4,3
+                var q = namelist.GroupBy(i => i)
+                    .Select(g => new { Value = g.Key, Count = g.Count() }).OrderBy(x => x.Value);
+
+                Console.WriteLine(amount + " rows found and " + q.Count() + " names");
+
+                foreach (var x in q)
+                {
+                    Console.WriteLine("Name " + x.Value + " is found " + x.Count + " times.");
+                }
             }
         }
     }
