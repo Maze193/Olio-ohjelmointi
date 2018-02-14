@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko2Tehtavat", "Vko2Tehtavat", "{2F448CF2-3E42-419A-A4DE-D0575E5CD144}"
 EndProject
@@ -66,6 +66,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeptions4", "Exeptions4\Exeptions4.csproj", "{A87BA79B-CDCA-4A19-9388-C3449775E045}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exeptions5", "Exeptions5\Exeptions5.csproj", "{6E8A2A9F-ECEE-42C7-8DFE-A1383887C55C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vko8Tehtavat", "Vko8Tehtavat", "{EA9FF496-B91C-4073-B825-DCE3CAA086B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegaatit", "Delegaatit\Delegaatit.csproj", "{E218BFB1-28A6-4BEF-89BB-CBC649F4F5DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +185,10 @@ Global
 		{6E8A2A9F-ECEE-42C7-8DFE-A1383887C55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E8A2A9F-ECEE-42C7-8DFE-A1383887C55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E8A2A9F-ECEE-42C7-8DFE-A1383887C55C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E218BFB1-28A6-4BEF-89BB-CBC649F4F5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E218BFB1-28A6-4BEF-89BB-CBC649F4F5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E218BFB1-28A6-4BEF-89BB-CBC649F4F5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E218BFB1-28A6-4BEF-89BB-CBC649F4F5DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -213,6 +221,7 @@ Global
 		{DAE2A0D3-1E58-4DA5-9325-0EC2522C6105} = {A236B04D-2375-4B00-B970-A6B16D3927B5}
 		{A87BA79B-CDCA-4A19-9388-C3449775E045} = {A236B04D-2375-4B00-B970-A6B16D3927B5}
 		{6E8A2A9F-ECEE-42C7-8DFE-A1383887C55C} = {A236B04D-2375-4B00-B970-A6B16D3927B5}
+		{E218BFB1-28A6-4BEF-89BB-CBC649F4F5DC} = {EA9FF496-B91C-4073-B825-DCE3CAA086B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEE216BC-6E62-4DB1-A471-E44A148A28A9}

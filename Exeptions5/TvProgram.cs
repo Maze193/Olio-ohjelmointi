@@ -28,5 +28,10 @@ namespace Exeptions5
             Info = info;
         }
 
+        public override string ToString()
+        {
+            return ProgramName + " " + Channel + " " + StartTime + " " + EndTime + " " + Info;
+        }
+
     }
 }
