@@ -10,5 +10,14 @@ namespace Delegaatit2
     {
         public string Name { get; set; }
         public string Email { get; set; }
+
+        public Friend(){ }
+
+        public Friend(string name, string email)
+        {
+            Name = name;
+            Email = email;
+        }
+
     }
 }
