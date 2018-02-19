@@ -75,7 +75,7 @@ namespace Delegaatit2
                 {
                     foreach (Friend friendsis in friends)
                     {
-                        addings.WriteLine(friendsis);
+                        addings.WriteLine(friendsis.Name + " " + friendsis.Email);
                     }
                     addings.Close();
                 }
@@ -92,13 +92,11 @@ namespace Delegaatit2
             Console.WriteLine("Give name or part of name you want to find");
             addname = Console.ReadLine();
 
-            var foo = friends.FirstOrDefault(x => x.Name.StartsWith(addname));
+            List<Friend> list = friends.FindAll(x => x.Name.StartsWith(addname));
 
-            foreach (Friend frie in friends)
+            foreach (Friend frie in list)
             {
-                
-                Friend friend = foo;
-                Console.WriteLine(friend.Name);
+                Console.WriteLine(frie.Name + " " + frie.Email);
             }
             
         }
