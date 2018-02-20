@@ -10,6 +10,7 @@ namespace Kertaus4
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
